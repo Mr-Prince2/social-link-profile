@@ -1,0 +1,99 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: var(--Grey-900);
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    width: 18rem;
+    height: 486px;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    background: var(--Grey-800);
+    box-shadow: 15px 15px 30px hsl(0, 0%, 10%), -15px -15px 30px hsl(0, 0%, 20%); 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card img{
+    width: 5rem;
+    border-radius: 10rem;
+    margin: 0;
+    
+}
+
+.card h2{
+    color: white;
+    margin: 1rem 0 0 0;
+    
+}
+
+.card .highlt-text{
+    color: var(--Green);
+    font-size: small;
+}
+
+.card .content{
+    color: white;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.buttons button{
+    display: block;
+    background-color: var(--Grey-700);
+    width: 15rem;
+    border-radius: 0.5rem;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+
+.buttons a button {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+
+.buttons a button:hover{
+    color: black;
+    text-decoration: none;
+    background-color: var(--Green);
+    transition: 0.3s ease-in-out;
+}
+
